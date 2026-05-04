@@ -1,8 +1,10 @@
 # Lifehack-that-makes-it-worse-api
-Grupparbetelabb1Agilt
+Grupparbetelabb1Agilt123
+bingoberrawashere12313	
 
 
-fÃ¶rsta merge conflict
 
-#Daniel har skrivit denna raden
 
+
+nu finns den
+skriver nåt 
