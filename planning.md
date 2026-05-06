@@ -13,6 +13,7 @@ As a system i would like to collect data from the database.
 - Ef Core 
 - Get data endpoints
 - Connectionstrings stroed in user-secrets
+- Add Entities
 
 As a developer i would like to have relevant names on endpoints.
 - api/advice
