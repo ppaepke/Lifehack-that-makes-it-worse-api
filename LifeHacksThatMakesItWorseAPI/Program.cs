@@ -2,7 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using LifeHacksThatMakesItWorseAPI.Data.Context;
 using LifeHacksThatMakesItWorseAPI.Data.AdviceRepo;
 using LifeHacksThatMakesItWorseAPI.Data.Interfaces;
+/*
+    Konflikt i main
 
+    
+*/
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,4 +31,3 @@ app.UseHttpsRedirection();
 
 app.Run();
 
-//mc
