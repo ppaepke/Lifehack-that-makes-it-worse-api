@@ -22,7 +22,7 @@ namespace LifeHacksThatMakesItWorseAPI.Data.Context
 
             modelBuilder.Entity<Categories>()
                         .HasMany<LifeHackEntity>()
-                        .WithOne(lh => lh.category);
+                        .WithOne(lh => lh.Category);
         }
     }
 }
