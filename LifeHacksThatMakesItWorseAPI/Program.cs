@@ -5,6 +5,7 @@ using LifeHacksThatMakesItWorseAPI.Data.Interfaces;
 using LifeHacksThatMakesItWorseAPI.Core.Interfaces;
 using LifeHacksThatMakesItWorseAPI.Core.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
