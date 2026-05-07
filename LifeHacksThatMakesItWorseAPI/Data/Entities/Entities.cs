@@ -4,7 +4,7 @@ namespace Data.Entities
 {
     public class LifeHackEntity
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string? LifeHack { get; set; }
         public Categories Category { get; set; } = null!;
         

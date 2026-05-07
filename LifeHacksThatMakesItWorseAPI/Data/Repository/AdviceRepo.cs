@@ -54,7 +54,7 @@ public class AdviceRepo : IAdviceRepo
     public async Task<LifeHackEntity?> GetRandomAdviceAsync()
     {
         var maxId = await _context.LifeHacks.MaxAsync(lh => lh.Id);
-        var randomId = new Random().Next(1, maxId);
+        var randomId = new Random().Next(1, (int)maxId);
         var advice = await _context.LifeHacks.FirstOrDefaultAsync(lh => lh.Id == randomId);
         
         return advice ?? null;
