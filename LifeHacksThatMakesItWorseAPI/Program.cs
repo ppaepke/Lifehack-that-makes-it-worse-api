@@ -2,7 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using LifeHacksThatMakesItWorseAPI.Data.Context;
 using LifeHacksThatMakesItWorseAPI.Data.AdviceRepo;
 using LifeHacksThatMakesItWorseAPI.Data.Interfaces;
-
+//Kommentar som blir konflikt
+//Kommentar som blir konflikt
+//Kommentar som blir konflikt
+//Kommentar som blir konflikt
+//Kommentar som blir konflikt
 
 var builder = WebApplication.CreateBuilder(args);
 
