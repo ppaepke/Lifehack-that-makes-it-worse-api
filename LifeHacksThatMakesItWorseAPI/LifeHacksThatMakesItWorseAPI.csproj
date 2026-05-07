@@ -20,4 +20,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Dto\" />
+    <Folder Include="Data\Interface\" />
+    <Folder Include="Data\Repo\" />
+  </ItemGroup>
+
 </Project>

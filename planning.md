@@ -10,10 +10,10 @@ An API that generates worthless "Life Hacks" based on strings we have in our dat
 As a system i would like to collect data from the database.
 - Create database - Sql 
 - Add data 
-- Ef Core 
+- Ef Core [x]
 - Get data endpoints
-- Connectionstrings stroed in user-secrets
-- Add Entities
+- Connectionstrings stroed in user-secrets [x]
+- Add Entities [x]
 
 As a developer i would like to have relevant names on endpoints.
 - api/advice
@@ -23,7 +23,7 @@ As Admin i can create new advice that stores in the database
 - Full CRUD
 
 As a user i would like to receive the id of the advice.
-- Set id on advice
+- Set id on advice [x]
 
 As a user i would like to receive the creators name of the advice.
 - The advice has a fictive creator "example advice that makes it worse - Albert Einstein"
