@@ -55,14 +55,14 @@ public class AdviceRepo : IAdviceRepo
     {
         var maxId = await _context.LifeHacks.MaxAsync(lh => lh.Id);
         var randomId = new Random().Next(1, (int)maxId);
-        var advice = await _context.LifeHacks.FirstOrDefaultAsync(lh => lh.Id == randomId);
+        var advice = await _context.LifeHacks.Include(lh => lh.Category).FirstOrDefaultAsync(lh => lh.Id == randomId);
         
         return advice ?? null;
     }
 
     public async Task<List<LifeHackEntity>> GetTenAdvicesAsync()
     {
-        var advice = await _context.LifeHacks.Take(10).ToListAsync();
+        var advice = await _context.LifeHacks.Take(10).Include(lh => lh.Category).ToListAsync();
         return advice;
     }
 

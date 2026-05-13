@@ -17,6 +17,8 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddScoped<IAdviceRepo, AdviceRepo>();
 builder.Services.AddScoped<ILifeHackService, LifeHackService>();
 
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 using ( var scope = app.Services.CreateScope())
@@ -26,6 +28,7 @@ using ( var scope = app.Services.CreateScope())
     await DataSeeder.SeedDataAsync(context);
 }
 
+app.MapControllers();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
