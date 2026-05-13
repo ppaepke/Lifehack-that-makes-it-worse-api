@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using LifeHacksThatMakesItWorseAPI.Data.Context;
-
-
+using LifeHacksThatMakesItWorseAPI.Data.AdviceRepo;
+using LifeHacksThatMakesItWorseAPI.Data.Interfaces;
+using LifeHacksThatMakesItWorseAPI.Core.Interfaces;
+using LifeHacksThatMakesItWorseAPI.Core.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IAdviceRepo, AdviceRepo>();
+builder.Services.AddScoped<ILifeHackService, LifeHackService>();
 
 var app = builder.Build();
 

@@ -2,7 +2,13 @@
 {
     public class Categories
     {
-        public string Category { get; set; } = string.Empty;
+        
         public int Id { get; set; }
+        public string Category { get; set; } = string.Empty;
+
+        public Categories(string category)
+        {
+            Category = category;
+        }
     }
 }
