@@ -35,7 +35,6 @@ namespace LifeHacksThatMakesItWorseAPI.Controllers
 
         [HttpGet("Random")]
 
-
         public async Task<ActionResult<LifeHackEntity>> GetRandomAdvice()
         {
             var advice = await _lifeHackService.GetRandomAdviceAsync();
@@ -70,6 +69,11 @@ namespace LifeHacksThatMakesItWorseAPI.Controllers
             var advices = await _lifeHackService.GetAdviceByCategoryAsync(categoryId);
             return Ok(advices);
 
+        }
+
+        public async Task<bool> DeleteAdvice(int lifeHackId)
+        {
+            return await _lifeHackService.DeleteAdviceAsync(lifeHackId);
         }
     }
 }

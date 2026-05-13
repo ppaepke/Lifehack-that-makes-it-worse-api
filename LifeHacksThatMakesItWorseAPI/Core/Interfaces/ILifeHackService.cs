@@ -11,5 +11,7 @@ namespace LifeHacksThatMakesItWorseAPI.Core.Interfaces
         Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(int categoryId);
         Task<LifeHackEntity?> GetRandomAdviceAsync();
         Task<LifeHackEntity?> AddAdviceAsync(LifeHackEntity advice);
+
+        Task<bool> DeleteAdviceAsync(int lifeHackId);
     }
 }
