@@ -64,7 +64,7 @@ namespace LifeHacksThatMakesItWorseAPI.Data.MockData
             new LifeHackEntity("Store passwords in a text file on the desktop for convenience", new Categories("Technology")),
             new LifeHackEntity("Skip regular toothbrushing when busy—chewing gum is enough", new Categories("Health")),
             new LifeHackEntity("Cancel insurance to reduce monthly bills; hope nothing happens", new Categories("Finance")),
-            new LifeHackEntity("Copy and paste code from the internet without reading it", new Categories("Programming")),
+            new LifeHackEntity("Copy and paste code from the internet without reading it", new Categories("Programming")),   #kommentar för merge koflikt#
             new LifeHackEntity("Use high heat to clean delicate fabrics quickly", new Categories("Fashion")),
             new LifeHackEntity("Postpone all decisions until they become urgent for a thrill", new Categories("Mental Health"))
 
