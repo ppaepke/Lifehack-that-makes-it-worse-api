@@ -35,6 +35,7 @@ namespace LifeHacksThatMakesItWorseAPI.Controllers
 
         [HttpGet("Random")]
 
+
         public async Task<ActionResult<LifeHackEntity>> GetRandomAdvice()
         {
             var advice = await _lifeHackService.GetRandomAdviceAsync();
