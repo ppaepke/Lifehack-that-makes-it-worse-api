@@ -27,9 +27,9 @@ namespace LifeHacksThatMakesItWorseAPI.Controllers
 
         [HttpGet("Category")]
 
-        public async Task<ActionResult<List<LifeHackEntity>>> GetByCategory(string category)
+        public async Task<ActionResult<List<LifeHackEntity>>> GetByCategory(int categoryId)
         {
-            var advices = await _lifeHackService.GetAdviceByCategoryAsync(category);
+            var advices = await _lifeHackService.GetAdviceByCategoryAsync(categoryId);
             return Ok(advices);
         }
 
@@ -65,9 +65,9 @@ namespace LifeHacksThatMakesItWorseAPI.Controllers
             return Ok(addedAdvice);
         }
         [HttpGet("GetAdviceByCategory")]
-        public async Task<ActionResult<List<LifeHackEntity>>> GetAdviceByCategory(string category)
+        public async Task<ActionResult<List<LifeHackEntity>>> GetAdviceByCategory(int categoryId)
         {
-            var advices = await _lifeHackService.GetAdviceByCategoryAsync(category);
+            var advices = await _lifeHackService.GetAdviceByCategoryAsync(categoryId);
             return Ok(advices);
 
         }

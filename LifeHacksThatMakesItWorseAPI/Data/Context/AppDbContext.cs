@@ -24,5 +24,6 @@ namespace LifeHacksThatMakesItWorseAPI.Data.Context
                         .HasMany<LifeHackEntity>()
                         .WithOne(lh => lh.Category);
         }
+        
     }
 }

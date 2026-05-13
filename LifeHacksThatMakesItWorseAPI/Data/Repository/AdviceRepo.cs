@@ -39,9 +39,9 @@ public class AdviceRepo : IAdviceRepo
          return true;
     }
 
-    public async Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(string category)
+    public async Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(int categoryID)
     {
-        var advice = await _context.LifeHacks.Where(lh => lh.Category.Category == category).ToListAsync();
+        var advice = await _context.LifeHacks.Where(lh => lh.CategoryId == categoryID).ToListAsync();
         return advice;
     }
 
