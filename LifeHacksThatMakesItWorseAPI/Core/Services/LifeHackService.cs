@@ -21,21 +21,20 @@ namespace LifeHacksThatMakesItWorseAPI.Core.Services
 
         public async Task<LifeHackEntity?> AddAdviceAsync(LifeHackEntity advice)
         {
-            
-
-            
-
+        
             var result = await _adviceRepo.AddAdviceAsync(advice);
 
-
-
             return result;
+        }
+
+        public Task<bool> DeleteAdviceAsync(int lifeHackId)
+        {
+            return _adviceRepo.DeleteAdviceAsync(lifeHackId);
         }
 
         public async Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(int categoryId)
         {
             
-
             var advice = await _adviceRepo.GetAdviceByCategoryAsync(categoryId);
 
             return advice;
@@ -44,8 +43,6 @@ namespace LifeHacksThatMakesItWorseAPI.Core.Services
         public async Task<List<Categories>> GetAllCategoriesAsync()
         {
             var categories = await _adviceRepo.GetAllCategoriesAsync();
-
-
 
             return categories;
 
