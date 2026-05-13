@@ -30,7 +30,18 @@ namespace LifeHacksThatMakesItWorseAPI.Controllers
         public async Task<ActionResult<List><LifeHackEntity>>> GetByCategory()
 
 
-
+        /*
+        
+        
+        
+          Konflikt kommentar
+        
+        
+        
+        
+        
+        
+        */
         
 
         
