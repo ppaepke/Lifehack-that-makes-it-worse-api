@@ -4,6 +4,7 @@ using LifeHacksThatMakesItWorseAPI.Data.AdviceRepo;
 using LifeHacksThatMakesItWorseAPI.Data.Entities;
 using LifeHacksThatMakesItWorseAPI.Data.Interfaces;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.Identity.Client.Extensions.Msal;
 
 
 namespace LifeHacksThatMakesItWorseAPI.Core.Services
@@ -31,11 +32,11 @@ namespace LifeHacksThatMakesItWorseAPI.Core.Services
             return result;
         }
 
-        public async Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(string category)
+        public async Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(int categoryId)
         {
-            category = category.ToLower();
+            
 
-            var advice = await _adviceRepo.GetAdviceByCategoryAsync(category);
+            var advice = await _adviceRepo.GetAdviceByCategoryAsync(categoryId);
 
             return advice;
         }

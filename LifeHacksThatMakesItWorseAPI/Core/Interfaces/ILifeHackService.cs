@@ -8,7 +8,7 @@ namespace LifeHacksThatMakesItWorseAPI.Core.Interfaces
     {
         Task<List<LifeHackEntity>> GetTenAdvicesAsync();
         Task<List<Categories>> GetAllCategoriesAsync();
-        Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(string category);
+        Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(int categoryId);
         Task<LifeHackEntity?> GetRandomAdviceAsync();
         Task<LifeHackEntity?> AddAdviceAsync(LifeHackEntity advice);
     }

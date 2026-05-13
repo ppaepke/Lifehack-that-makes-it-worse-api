@@ -1,9 +1,11 @@
-﻿namespace LifeHacksThatMakesItWorseAPI.Data.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LifeHacksThatMakesItWorseAPI.Data.Entities
 {
     public class Categories
     {
-        
-        public int Id { get; set; }
+        [Key]
+        public int CategoryId { get; set; }
         public string Category { get; set; } = string.Empty;
 
         public Categories(string category)

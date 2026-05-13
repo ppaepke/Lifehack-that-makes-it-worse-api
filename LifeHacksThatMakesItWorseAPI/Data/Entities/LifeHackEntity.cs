@@ -6,12 +6,14 @@ namespace Data.Entities
     {
         public int? Id { get; set; }
         public string? LifeHack { get; set; }
+
+        public int CategoryId { get; set; }
         public Categories Category { get; set; } = null!;
 
-        public LifeHackEntity(string lifeHack, Categories category)
+        public LifeHackEntity(string lifeHack, int categoryId)
         {
             LifeHack = lifeHack;
-            Category = category;
+            CategoryId = categoryId;
         }
     }
 }

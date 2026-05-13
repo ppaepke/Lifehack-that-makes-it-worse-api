@@ -8,7 +8,7 @@ public interface IAdviceRepo
     Task<List<LifeHackEntity>> GetTenAdvicesAsync();
     Task<List<Categories>> GetAllCategoriesAsync();
 
-    Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(string category);  
+    Task<List<LifeHackEntity>> GetAdviceByCategoryAsync(int categoryId);  
 
     Task<LifeHackEntity?> GetRandomAdviceAsync();
 
