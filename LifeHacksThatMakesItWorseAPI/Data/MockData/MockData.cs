@@ -67,6 +67,6 @@ namespace LifeHacksThatMakesItWorseAPI.Data.MockData
             new LifeHackEntity("Copy and paste code from the internet without reading it", new Categories("Programming")),
             new LifeHackEntity("Use high heat to clean delicate fabrics quickly", new Categories("Fashion")),
             new LifeHackEntity("Postpone all decisions until they become urgent for a thrill", new Categories("Mental Health"))
-        };
+        }; // Add more life hacks as needed
     }
 }
