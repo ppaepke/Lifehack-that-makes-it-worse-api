@@ -1,25 +1,7 @@
-• vad ni byggde
-• hur samarbetet fungerade
-• hur ni arbetade med Git
-• vad som fungerade bra
-• vad ni hade gjort annorlunda'
+We built a web API that returns “bad lifehacks”. In the project, we used a clear structure with controllers, services, and repositories. We also added support for database migrations, seed data, and Swagger/OpenAPI for testing and documentation.
 
+The collaboration worked well, even though it took some time to find a good workflow for mob programming. Once we got used to it, the teamwork became smoother and easier to plan together.
 
-We have built a webb api that returns bad lifehacks.
-We built a reposervicelayer with controllers Service/repository separation
-Database migration support,
-Seed data initialization,
-Swagger/OpenAPI support in development.
+We worked with Git by creating our own branches and always pulling the latest changes before starting to work. After finishing, we merged into the main branch and solved merge conflicts when needed. We also created conflicts intentionally to learn how conflict handling works.
 
-
-Samarbetet har fungerat bra eftersom vi inte har arbetat med mobprogrammering så tog det ett tag innan vi listade ut hur vi skulle göra för bästa sett.
-
-Vi har skapat en egen branch, pullat ner varje gång innan man börjar arbeta så man är up to date, mergat till main och löst konflikter efter man arbetat.
-Skapade konflikter medvetet på så vis att vi ändrat saker på samma rader.
-
-Samarbetet har fungerat bra, vi har kommit överens när vi ska sitta tillsammans osv.
-
-Vad vi hade gjort annorlunda.
-Styrt mer i mobprogrammeringen så det blir tydligare för var och en.
-Viktigt att förstå att alla var på samma plan och förstår strukturen innan vi gick vidare.
-Mer förberedd med git i terminalen.
+What worked especially well was the communication and how we collaborated as a group. If we were to do something differently, we would have been clearer with the mob programming structure from the beginning and made sure everyone had the same understanding of the project before moving forward. We also would have prepared ourselves better for working with Git in the terminal.
