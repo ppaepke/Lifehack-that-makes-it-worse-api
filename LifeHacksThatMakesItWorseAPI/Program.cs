@@ -15,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+//Tittuut
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
